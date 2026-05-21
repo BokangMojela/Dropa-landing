@@ -593,6 +593,219 @@ body {
     background: var(--primary-dark);
 }
 
+/* Business Section */
+.business {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.business-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.business-text {
+    animation: fadeInUp 0.8s ease;
+}
+
+.business-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.business-description {
+    font-size: 1.125rem;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.business-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.business-feature {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.business-feature-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.business-feature-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--dark);
+}
+
+.business-feature-text {
+    font-size: 0.875rem;
+    color: var(--gray);
+}
+
+.business-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.business-stats {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.business-stat {
+    text-align: center;
+}
+
+.business-stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.business-stat-label {
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+.business-image {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-card-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.business-card {
+    position: absolute;
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-8px);
+}
+
+.business-card.card-1 {
+    top: 0;
+    left: 0;
+    right: 20%;
+    z-index: 3;
+}
+
+.business-card.card-2 {
+    top: 40%;
+    right: 0;
+    left: 20%;
+    z-index: 2;
+}
+
+.business-card.card-3 {
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    z-index: 1;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metric-label {
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+.metric-value {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.metric-value.success {
+    color: var(--primary);
+}
+
+.savings-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.savings-label {
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+.active-count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.active-label {
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
 /* Testimonials Section */
 .testimonials {
     padding: 80px 0;
@@ -895,6 +1108,41 @@ body {
     .pricing-grid,
     .testimonials-grid {
         grid-template-columns: 1fr;
+    }
+
+    .business-content {
+        grid-template-columns: 1fr;
+    }
+
+    .business-title {
+        font-size: 2rem;
+    }
+
+    .business-features {
+        grid-template-columns: 1fr;
+    }
+
+    .business-cta {
+        flex-direction: column;
+    }
+
+    .business-stats {
+        gap: 1.5rem;
+    }
+
+    .business-image {
+        height: 400px;
+    }
+
+    .business-card {
+        padding: 1rem;
+    }
+
+    .business-card.card-1,
+    .business-card.card-2,
+    .business-card.card-3 {
+        left: 0;
+        right: 0;
     }
 
     .footer-content {
